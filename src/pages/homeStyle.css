@@ -1,0 +1,21 @@
+.partnerTitle {
+  position: relative;
+  bottom: -4px;
+  background-color: #F8FBFF;
+}
+
+.partnerTitlePos {
+  position: relative;
+  left: 110px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.quip {
+  font-size: 27.5px;
+  color: #16315C;
+}
+
+*{
+  font-family: 'Poppins';
+}

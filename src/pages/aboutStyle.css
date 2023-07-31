@@ -1,0 +1,115 @@
+* {
+  font-family: 'Poppins';
+}
+
+.rotate90 {
+  transform: rotate(45deg);
+}
+
+.iconpos {
+  position: relative;
+  top: 4px;
+}
+
+.links {
+  border-bottom: solid;
+  cursor: pointer;
+}
+
+.top-rounded {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.bottom-rounded {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  top: -10px;
+}
+
+.blue-border {
+  border: solid;
+  border-color: #3050a4;
+  border-top: 0;
+  font-size: 12px;
+}
+
+.narrow {
+  padding: 200px;
+  padding-top: 0px;
+}
+
+.blue-border1 {
+  border: solid;
+  border-color: #3050a4;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3050a4;
+  margin-right: 2px;
+}
+
+.empty {
+  background-color: white;
+  border-color: #3050a4;
+  border-width: 1px;
+}
+
+/* Vertical line container */
+.vertical-line {
+  position: relative;
+  margin-left: 10px; /* Adjust the left margin as needed */
+}
+
+/* Vertical line */
+.vertical-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; /* Align the line to the left */
+  margin-left: -11px; /* Adjust the width of the line */
+  background-color: #3050a4; /* Color of the line */
+  width: 2px; /* Width of the line */
+  z-index: 11;
+}
+
+/* Vertical line container */
+.vertical-line2 {
+  position: relative;
+  margin-left: 10px; /* Adjust the left margin as needed */
+}
+
+/* Vertical line */
+.vertical-line2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; /* Align the line to the left */
+  margin-left: 0px; /* Adjust the width of the line */
+  background-color: #3050a4; /* Color of the line */
+  width: 2px; /* Width of the line */
+  z-index: 11;
+}
+
+/* Square marker */
+.square-marker {
+  position: relative;
+  top: 50px;
+  left: -31px; /* Adjust the left position to align the marker with the line */
+  margin-top: -5px; /* Adjust the top position to center the marker vertically */
+  width: 40px; /* Width of the marker */
+  height: 40px; /* Height of the marker */
+  background-color: #fff0ed; /* Color of the marker */
+  border-color: #16315c;
+  z-index: 12; /* Make the marker a circle */
+}
+
+#timeline {
+  background-color: #f8fbff;
+}

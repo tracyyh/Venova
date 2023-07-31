@@ -1,0 +1,99 @@
+{
+    "Main" : {
+      "body" : {
+        "type" : "Slices",
+        "fieldset" : "Slice zone",
+        "config" : {
+          "labels" : { },
+          "choices" : {
+            "customer_logos" : {
+              "type" : "Slice",
+              "fieldset" : "partners",
+              "description" : "Display a list of your customers logos",
+              "icon" : "accessibility",
+              "display" : "list",
+              "non-repeat" : {
+                "call_to_action" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "single" : "paragraph",
+                    "label" : "Call To Action",
+                    "placeholder" : "View customer stories"
+                  }
+                },
+                "call_to_action_link" : {
+                  "type" : "Link",
+                  "config" : {
+                    "allowTargetBlank" : true,
+                    "label" : "Call to Action Link",
+                    "placeholder" : "Could be a signup link, or a link to customer stories",
+                    "select" : null
+                  }
+                }
+              },
+              "repeat" : {
+                "logo" : {
+                  "type" : "Image",
+                  "config" : {
+                    "constraint" : { },
+                    "thumbnails" : [ ],
+                    "label" : "Logo"
+                  }
+                }
+              }
+            },
+            "banner" : {
+              "type" : "Slice",
+              "fieldset" : "banner",
+              "description" : "banner of main page",
+              "icon" : "camera_alt",
+              "display" : "list",
+              "non-repeat" : {
+                "banner" : {
+                  "type" : "Image",
+                  "config" : {
+                    "constraint" : {
+                      "width" : 1600,
+                      "height" : 700
+                    },
+                    "thumbnails" : [ ],
+                    "label" : "banner"
+                  }
+                }
+              },
+              "repeat" : { }
+            },
+            "problems" : {
+              "type" : "Slice",
+              "fieldset" : "problems",
+              "description" : "problems",
+              "icon" : "report_problem",
+              "display" : "list",
+              "non-repeat" : { },
+              "repeat" : {
+                "logo" : {
+                  "type" : "Image",
+                  "config" : {
+                    "constraint" : {
+                      "width" : 80,
+                      "height" : 80
+                    },
+                    "thumbnails" : [ ],
+                    "label" : "logo"
+                  }
+                },
+                "text" : {
+                  "type" : "StructuredText",
+                  "config" : {
+                    "multi" : "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+                    "label" : "text",
+                    "placeholder" : "put text here"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
